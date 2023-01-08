@@ -10,8 +10,8 @@
 
 5. Good notes app - for UX planning 
 
-## Steps to start working on a app 
 
+ 
 -> Create low level design
 -> Create app layout 
 
@@ -49,7 +49,7 @@ style = { border : red 1px soild} ; -> not possible -> wrap inside () inside jsx
 Config - driven UI : Different UI layout for different users - Backend driven config 
 
 
-Optional chaining 
+Optional chaining  ? 
 
 Props (Properties) -> attributes passed through component tag -> similar to arguments passed in function in js -> received as parameters in the function (component in react)
 
