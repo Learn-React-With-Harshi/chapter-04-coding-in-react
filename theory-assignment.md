@@ -90,8 +90,8 @@ Types of Props :
 
 - Passing Props to Component - props are the only argument to your component. React component functions accept a single argument, a props object.
 
-  | Ways to pass props to component | Ways to receive the props in another component | 
-| -------------    |:-------------:             | 
+| Ways to pass props to component | Ways to receive the props in another component | 
+| ------------------------------- | :--------------------------------:             | 
 | 1. Add props to the JSX, just like you would with HTML attributes  | All props are sent into a single props object  | 
 |  ```<Profile name = { "Harshi"} age={28}   />``` |  ``` const Profile = (props) => { let name = props.name; let age = props.age; } ``` |  
 | 2.   Similar to the way mentioned in 1.          | Props object can be destructed using {} to receive only the required props| 
