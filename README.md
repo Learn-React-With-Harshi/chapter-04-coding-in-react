@@ -7,4 +7,9 @@
 
 One line about this chapter : `Props (properties) passed in Component are similar to the arguments passed in a js function call and received by the function definition as parameters.`
 
+
+Check out [Chapter-04 Live](https://learn-react-with-harshi-chapter-04.netlify.app/) for the live demo of this chapter's coding assignment 
+
+
+
 If you are interested in other chapters of this series, please browse through the [my repositories](https://github.com/orgs/Learn-React-With-Harshi/repositories)
