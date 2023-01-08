@@ -59,14 +59,14 @@
    Virtual DOM (VDOM) is a programming concept where a copy/virtual representaion of the UI is kept in memory and synced with the "real" DOM tree by a library called `React-DOM`. This process is called `Reconciliation`. In React, a virtual DOM is associated with `React elements` since they are the objects representing the UI. React, however, also uses internal objects called “fibers” to hold additional information about the component tree. They may also be considered a part of “virtual DOM” implementation in React.
 
 ### 7. What is Reconciliation in react ?
-    React uses diffing algorithm to diff one tree (actually dom) from another which determines what needs to be updated and only re-renders the diff.
+React uses diffing algorithm to diff one tree (actually dom) from another which determines what needs to be updated and only re-renders the diff.
 
    In React, we pass props to a component, when any of the prop changes, a reconciliation process is triggered internally by react which traverses the whole component hierarchy to mark any changes required in the given component at a time.
 
    Reconciler vs Renderer => Reconciler does the work of computing which parts of the tree have changed. Renderer uses this info to actually update the rendered app. 
 
 ### 8. What is React Fiber ?
-      React Fiber is the new reconciliation engine in React 16. The goal of React Fiber is to increase its suitability for areas like `animation, layout, and gestures`. Its headline feature is `incremental rendering`: the ability to split rendering work into chunks and spread it out over multiple frames.
+React Fiber is the new reconciliation engine in React 16. The goal of React Fiber is to increase its suitability for areas like `animation, layout, and gestures`. Its headline feature is `incremental rendering`: the ability to split rendering work into chunks and spread it out over multiple frames.
 
 ### 9. Why do we need key in React ? When do we need keys in React ?
    A `key` is a special string attribute you need to include when creating lists of elements. Keys help React identify which items have changed, are added, or are removed.
@@ -90,8 +90,8 @@ Types of Props :
 
 - Passing Props to Component - props are the only argument to your component. React component functions accept a single argument, a props object.
 
-  | Ways to pass props to component                                                     | Ways to receive the props in another component           | 
-| -------------                                                   |:-------------:             | 
+  | Ways to pass props to component | Ways to receive the props in another component | 
+| -------------    |:-------------:             | 
 | 1. Add props to the JSX, just like you would with HTML attributes        | All props are sent into a single props object  | 
 |  ```<Profile name = { "Harshi"} age={28}   />```|  ``` const Profile = (props) => { let name = props.name;
   let age = props.age; } ``` |  
