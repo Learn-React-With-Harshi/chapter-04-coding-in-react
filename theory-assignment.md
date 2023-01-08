@@ -92,11 +92,11 @@ Types of Props :
 
   | Ways to pass props to component | Ways to receive the props in another component | 
 | -------------    |:-------------:             | 
-| 1. Add props to the JSX, just like you would with HTML attributes        | All props are sent into a single props object  | 
-|  ```<Profile name = { "Harshi"} age={28}   />```|  ``` const Profile = (props) => { let name = props.name;
-  let age = props.age; } ``` |  
-| 2. ```<Profile name = { "Harshi"} age={28}   />```    | Props object can be destructed using {} to receive only the required props ``` const Profile = ({name, age}) => { } ```    | 
-| 3. Using spread syntax |         | And props objects destructed using {}        |
+| 1. Add props to the JSX, just like you would with HTML attributes  | All props are sent into a single props object  | 
+|  ```<Profile name = { "Harshi"} age={28}   />``` |  ``` const Profile = (props) => { let name = props.name; let age = props.age; } ``` |  
+| 2.   Similar to the way mentioned in 1.          | Props object can be destructed using {} to receive only the required props| 
+| ```<Profile name = { "Harshi"} age={28}   />```  | ``` const Profile = ({name, age}) => { } ```    | 
+| 3. Using spread syntax                           |  And props objects destructed using {}        |
 | ```<Profile {...props}   />```   | ``` const Profile = ({name, age}) => { } ```  |
 
 However, props are immutable which means unchangeable. When a component needs to change its props (for example, in response to a user interaction or new data), it will have to “ask” its parent component to pass it different props—a new object! Its old props will then be cast aside, and eventually the JavaScript engine will reclaim the memory taken by them.
