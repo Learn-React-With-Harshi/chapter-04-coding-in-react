@@ -40,7 +40,8 @@ In our case, we are using mock data for now which contains information about a l
 
 Once data model is ready, use the data to populate the restaurant view by looping (use array map function ie for each restaurant in the array, tranform the restaurant data into restaurant card by writing jsx). Pass restaurant data as Props to the RestaurantCard
 
-We have successfully implemented few features in this chapter. Other steps will be continued in next chapter. If you are interested, check out this [Chapter-05] (https://github.com/Learn-React-With-Harshi/chapter-05-lets-get-hooked/)
+We have successfully implemented few features in this chapter. Other steps will be continued in next chapter. If you are interested, check out this [Chapter-05](https://github.com/Learn-React-With-Harshi/chapter-05-lets-get-hooked/blob/main/coding-assignment.md)
+
 
 
 
