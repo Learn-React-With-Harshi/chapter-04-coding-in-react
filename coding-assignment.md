@@ -16,7 +16,7 @@ Reference : [Thinking in React](https://beta.reactjs.org/learn/thinking-in-react
  - Single responsibility principle, that is, a component should ideally only do one thing. If it ends up growing, it should be decomposed into smaller subcomponents.
 
 In our case, the app components are decomposed as follows based on their functionality.
-
+```
   AppLayout
     Header 
      - Title
@@ -25,7 +25,7 @@ In our case, the app components are decomposed as follows based on their functio
      - SearchComponent
      - RestaurantCard
     Footer 
-
+```
 ### Step : 2 Build a static version in React
 - The easiest way is to build a version that takes your data model and renders the UI but has no interactivity.
 - Use props to pass parent to child component at this stage. Don't use state at this step. State is reserved only for interactivity, that is, data that changes over time
