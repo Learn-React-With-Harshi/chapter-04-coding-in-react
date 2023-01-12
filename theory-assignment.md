@@ -46,11 +46,11 @@
 ### 5. What is <React.Fragment></React.Fragment> and <></> ?
    Each jsx element (component) can have only one parent. This is because jsx element is converted to React.createElement(parent, props, ...children) before rendering in the DOM. 
 
-   But the common pattern in React is for a component to return multiple elements. For grouping, we can enclose them within `<div> </div>`. But there can be situations were <div> </div> should not be used. In such cases, Fragments can be used to group a list of children without adding extra nodes to the DOM.
+   But the common pattern in React is for a component to return multiple elements. For grouping, we can enclose them within `<div> </div>`. But there can be situations were `<div> </div>` should not be used. In such cases, Fragments can be used to group a list of children without adding extra nodes to the DOM.
 
    For Example : If <Columns /> components return multiple <td></td> elements to be rendered inside the table. It would be invalid to wrap it inside <div></div> since HTML would be invalid. <React.Fragment></React.Fragment> can be used in such cases.
 
-   The new, short syntax for declaring Fragment is empty tags `<> </>`. It can be used in teh same way as any other element but it doesn't support keys or attributes. 
+   The new, short syntax for declaring Fragment is empty tags `<> </>`. It can be used in the same way as any other element but it doesn't support keys or attributes. 
 
    `What if React fires a key warning?`
      There will be cases where we might use Fragments while mapping a list of elements . And React will fire a key warning since every element must have a unique key. In such cases, `Keyed Fragments` can be used. key is the only attribute that can be passed to <React.Fragment></React.Fragment>. This is not possible with <></>.
