@@ -48,7 +48,7 @@
 
    But the common pattern in React is for a component to return multiple elements. For grouping, we can enclose them within `<div> </div>`. But there can be situations were `<div> </div>` should not be used. In such cases, Fragments can be used to group a list of children without adding extra nodes to the DOM.
 
-   For Example : If <Columns /> components return multiple <td></td> elements to be rendered inside the table. It would be invalid to wrap it inside <div></div> since HTML would be invalid. <React.Fragment></React.Fragment> can be used in such cases.
+   For Example : If `<Columns />` components return multiple `<td></td>` elements to be rendered inside the table. It would be invalid to wrap it inside `<div></div>` since HTML would be invalid. `<React.Fragment></React.Fragment>` can be used in such cases.
 
    The new, short syntax for declaring Fragment is empty tags `<> </>`. It can be used in the same way as any other element but it doesn't support keys or attributes. 
 
